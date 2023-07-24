@@ -1,0 +1,76 @@
+.sidebar-trigger{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    margin: 0px;
+    padding: 14px 15px 12px;
+}
+.lightbox-sidebar-hamburguer{
+	background-color: rgba(0,0,0, 0.4);
+    position: fixed;
+    top: 0px; bottom: 0px; left:0px; right:0px;
+	z-index:9999;
+}
+.sidebar-hamburguer-container{
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 300px;
+	z-index:99999;
+}
+
+/* hierarquia com bootstrap 3 */
+.sidebar-hamburguer-container .list-group{
+    height: 100%;
+    overflow: auto;
+    padding-top: 50px;
+}
+.sidebar-hamburguer-container .list-group .list-group-item-heading{
+	position: absolute;
+    z-index: 9;
+    top: 0px;
+	left: 0px;
+    width: 100%;
+}
+.sidebar-hamburguer-container .list-group .list-group-item{padding:0px;}
+.sidebar-hamburguer-container .list-group-item a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+	transition:0.2s;
+}
+.sidebar-hamburguer-container .list-group .list-group-item-heading button.close-sidebar{ background:none; border:none; margin-top:5px;}
+
+/*temas hierarquia com bootstrap 3*/
+
+.light .list-group .list-group-item-heading, .light .list-group .list-group-item-heading button.close-sidebar span, .light .list-group li a{color:#666;}
+.light .list-group li a:hover, .light .list-group li a:focus{ border-right: #C00 3px solid}
+.light .list-group li ul li a:hover, .light .list-group li ul li a:focus{ border-right: #F33 3px solid}
+.light .list-group .list-group-item-heading{ background:#FFF;}
+.light .list-group-item a{text-decoration:none; font-weight:bold; font-size:12px;}
+.light .list-group-item a:hover, .light .list-group-item a:focus{background:#F2F2F2;}
+.light .list-group li ul li{ background:none; border: 0px;}
+.light .list-group .list-group-item-heading h1{
+    margin: 0px 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #ccc;
+    padding-left: 10px;
+}
+
+.light li.active-opt{background:#E4E3E3;}
+
+.list-group li ul li.list-group-divisor{
+	border-bottom: 1px solid #ccc;
+    color: #7d7d7d;
+    list-style-type: none;}
+body.no-scroll{overflow:hidden;}
+.left-bar{left: -400px;}
+.right-bar{right: -400px;}
+
+/**/
